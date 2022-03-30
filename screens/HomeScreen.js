@@ -2,6 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View, SafeAreaView, Image } from 'react-native'
 import tw from 'tailwind-react-native-classnames';
 import NavOptions from "../Components/NavOptions";
+import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 
 
 const HomeScreen = () => {

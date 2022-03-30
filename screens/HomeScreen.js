@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, SafeAreaView, Image } from 'react-native'
 import tw from 'tailwind-react-native-classnames';
+import NavOptions from "../Components/NavOptions";
 
 
 const HomeScreen = () => {
@@ -18,6 +19,7 @@ const HomeScreen = () => {
             uri: "https://links.papareact.com/gzs",
           }}
           />
+          <NavOptions />
         </View>
       {/* <Text
         style={tw `text-red-500 p-10`}>I am the home screen</Text> */}

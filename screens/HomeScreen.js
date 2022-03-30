@@ -21,11 +21,9 @@ const HomeScreen = () => {
           />
           <NavOptions />
         </View>
-      {/* <Text
-        style={tw `text-red-500 p-10`}>I am the home screen</Text> */}
     </SafeAreaView>
-  )
-}
+  );
+};
 
 export default HomeScreen;
 

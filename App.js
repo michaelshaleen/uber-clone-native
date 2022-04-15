@@ -33,7 +33,7 @@ export default function App() {
                 headerShown: false,
               }}
             />
-             {/* <Stack.Screen 
+            {/* <Stack.Screen 
               name='EatScreen' 
               component={FoodScreen}
               options={{

@@ -22,6 +22,8 @@ const NavOptions = () => {
 
 
   const navigation = useNavigation();
+
+
   return (
     <FlatList 
       data={data}
@@ -30,7 +32,8 @@ const NavOptions = () => {
       renderItem={({ item }) =>(
         <TouchableOpacity
           onPress={() => navigation.navigate(item.screen)}
-          style={tw `p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40 h-52`}>
+          style={tw `p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40 h-52`}
+        >
           <View>
             <Image
             style={{width: 100, height: 100, resizeMode: "contain"}}

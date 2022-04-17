@@ -44,10 +44,7 @@ const HomeScreen = () => {
                 description: data.description,
               })
             );
-
               dispatch(setDestination(null));
-
-              
             }}
             fetchDetails={true}
             returnKeyType={"search"}
@@ -55,11 +52,10 @@ const HomeScreen = () => {
             minLength={2}
             query={{
               key: REACT_APP_APIKEY,
-              language: 'en'
+              language: "en"
             }}
             nearbyPlacesAPI="GooglePlacesSearch"
             debounce={400} //time before auto complete shows
-          
           />
           <NavOptions />
         </View>

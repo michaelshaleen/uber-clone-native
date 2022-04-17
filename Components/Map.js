@@ -15,7 +15,7 @@ const Map = () => {
   return (
     <MapView
       style={tw `flex-1`}
-      // mapType='mutedStandard'
+      mapType='mutedStandard'
       initialRegion={{
         latitude: origin.location.lat,
         longitude: origin.location.lng,
@@ -23,7 +23,6 @@ const Map = () => {
         longitudeDelta: 0.005,
       }}
     >
-
       {origin?.location && (
         <Marker 
             coordinate={{

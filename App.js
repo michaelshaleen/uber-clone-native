@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, ScrollView, TextInput } from 'react-native';
+import { StyleSheet, KeyboardAvoidingView, Text, View, Image, ScrollView, TextInput } from 'react-native';
 import { Provider } from 'react-redux';
 import { store } from "./store";
 import HomeScreen from "./screens/HomeScreen";
@@ -18,6 +18,7 @@ export default function App() {
     <Provider store={store}>
       <NavigationContainer>
         <SafeAreaProvider>
+          <KeyboardAvoidingView style={{flex: 1}}>
           <Stack.Navigator>
             <Stack.Screen 
               name='Home Screen' 
@@ -42,6 +43,8 @@ export default function App() {
             /> */}
 
           </Stack.Navigator>
+          </KeyboardAvoidingView>
+          
         </SafeAreaProvider>
       </NavigationContainer>
     </Provider>

@@ -5,6 +5,7 @@ import NavOptions from "../Components/NavOptions";
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import { useDispatch } from 'react-redux';
 import { REACT_APP_APIKEY } from "@env";
+import NavFavorites from '../Components/NavFavorites';
 
 import { setDestination, setOrigin } from '../slices/navSlice';
 const HomeScreen = () => {
@@ -59,6 +60,7 @@ const HomeScreen = () => {
             debounce={400} //time before auto complete shows
           />
           <NavOptions />
+          <NavFavorites />
         </View>
     </SafeAreaView>
   );

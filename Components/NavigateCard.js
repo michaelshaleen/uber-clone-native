@@ -6,6 +6,7 @@ import { REACT_APP_APIKEY } from "@env";
 import { useDispatch } from 'react-redux';
 import { setDestination, setOrigin } from '../slices/navSlice';
 import { useNavigation } from '@react-navigation/native';
+import NavFavorites from '../Components/NavFavorites';
 
 
 
@@ -53,7 +54,7 @@ const NavigateCard = () => {
                 debounce={400}
               />
             </View>
-
+            <NavFavorites />
         </View>
     </SafeAreaView>
   )

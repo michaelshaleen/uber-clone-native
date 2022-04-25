@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Image } from 'react'
 import { SafeAreaView, StyleSheet, TouchableOpacity, FlatList, Text, View } from 'react-native'
 import { Icon } from "react-native-elements";
 import { useNavigation } from '@react-navigation/native';
@@ -54,12 +54,19 @@ const RideOptionsCard = () => {
       <FlatList 
         data={data}
         keyExtractor={(item) => item.id} 
-        renderItem={({item}) => (
+        renderItem={({item:{id, title, multiplier, image}}) => (
 
           <TouchableOpacity>
-            <Text>
-              Car
-            </Text>
+            <Image 
+              style={{
+                width: 100,
+                height: 100,
+                resizeMode: "contain",
+              }}
+              source={{uri: image}}
+            
+            
+            />
           </TouchableOpacity>
         )}
       
